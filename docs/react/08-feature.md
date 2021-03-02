@@ -14,7 +14,7 @@
 ### 错误边界
 - 解决的问题：组件内的 JavaScript 错误会导致 React 的内部状态被破坏，并且在下一次渲染时 产生 可能无法追踪的 错误
 - 原理:  static getDerivedStateFromError() 或 componentDidCatch() 这两个生命周期的方法，static getDerivedStateFromError() 渲染备用 UI ，使用 componentDidCatch() 打印错误信息。
-- 使用：<ErrorBoundary> 包含子组件，位置可以在全局，或局部，局部的好处是避免其他没问题的组件正常展示
+- 使用：`<ErrorBoundary>` 包含子组件，位置可以在全局，或局部，局部的好处是避免其他没问题的组件正常展示
 
 ### ref转发和ref
 - 解决问题：操作dom的问题
@@ -40,7 +40,7 @@
 
 ### Portals
 - 解决的问题：将子节点渲染到存在于父组件以外的 DOM 节点
-- 用法： ReactDOM.createPortal(child, container)
+- 用法： `ReactDOM.createPortal(child, container)`
 - 事件冒泡：还是按组件的层级来，父组件可以监听到。
 
 ### Profiler

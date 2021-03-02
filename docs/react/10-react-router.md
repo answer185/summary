@@ -45,14 +45,14 @@
 
 React Router 中有三类组件：
 
-- router components 路由器，<BrowserRouter>、<HashRouter>
-- route matching components 路线匹配器，<Route>、<Switch>
-- navigation components 导航，<Link>、<NavLink>、<Redirect>
+- router components 路由器，`<BrowserRouter>`、`<HashRouter>`
+- route matching components 路线匹配器，`<Route>`、`<Switch>`
+- navigation components 导航，`<Link>`、`<NavLink>`、`<Redirect>`
 
 其他还有 
--  <MemoryRouter> ：内存路由组件、
--  <NativeRouter> Native的路由组件、
--  <StaticRouter> 静态路由组件这些路由组件，
+-  `<MemoryRouter>` ：内存路由组件、
+-  `<NativeRouter>` Native的路由组件、
+-  `<StaticRouter>` 静态路由组件这些路由组件，
 
 其中 MemoryRouter 主要用在 ReactNative 这种非浏览器的环境中，因此直接将 URL 的 history 保存在了内容中。StaticRouter 主要用于服务器端渲染
 
@@ -60,10 +60,10 @@ React Router 中有三类组件：
 当 location 与 Route 的 path 匹配时渲染 Route 中的 Component
 #### 三种渲染方式
 Route 接受三种渲染方式
-- <Route component>
-- <Route render>： render function 类型，Route 会渲染这个 function 的返回值，可以在函数中附加一些额外的逻辑，所以你可以在render中添加一些逻辑判断，再返回一个要渲染的 component
+- `<Route component>`
+- `<Route render>`： render function 类型，Route 会渲染这个 function 的返回值，可以在函数中附加一些额外的逻辑，所以你可以在render中添加一些逻辑判断，再返回一个要渲染的 component
 
-- <Route children> ： children function 类型，比 render 多了 match参数，可以根据 match参数来决定匹配的时候渲染什么，不匹配的时候渲染什么
+- `<Route children>` ： children function 类型，比 render 多了 match参数，可以根据 match参数来决定匹配的时候渲染什么，不匹配的时候渲染什么
 
 #### 属性
 Route 经常用的是 exact、path 以及 component 属性
